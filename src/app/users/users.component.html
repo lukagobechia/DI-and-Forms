@@ -1,0 +1,25 @@
+<form>
+    <div>
+        <label for="username">First Name:</label>
+        <input type="text" name="fisrtname" [(ngModel)]="user.FirstName" required>
+    </div>
+    <div>
+        <label for="username">Last Name:</label>
+        <input type="text" name="lastname" [(ngModel)]="user.LastName" required>
+    </div>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="user.Username" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.Email" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.Password" required>
+    </div>
+    <div>
+        <button type="submit" (click)="addUser()">Save User</button>
+    </div>
+</form>
